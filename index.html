@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SH Week 1 task</title>
+    <style>
+     
+
+      body {
+        background-color: dimgrey;
+        font-size: 20px;
+        text-align: center;
+      }
+      input {
+        margin: 4px;
+      }
+      fieldset{
+        width: 250px;
+        margin: 0 auto;
+        border-color: cornsilk;
+      }
+      #submit{
+        padding: 1 rem;
+        background-color: darkslategray;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" onsubmit="myFunction()">
+      <fieldset>
+        <legend><h3>Fill in your bio-data form</h3></legend>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" size="40" required /> <br />
+        <label for="email">Email address:</label>
+        <input type="email" name="email" id="email" size="40" required /> <br />
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" size="40" required /> <br />
+        <label for="p-no">Phone number:</label>
+        <input type="number" name="p-no" id="p-no" size="40"/> <br />
+        <input type="checkbox" name="gender" id="gender" required />
+        <label for="gender"> Female</label>
+        <input type="checkbox" name="gender" id="gender" />
+        <label for="gender">Male</label> <br />
+        <input type="button" value="Submit" id="submit">
+      </fieldset>
+    </form>
+    <script>
+      function myFunction(){
+        alert("The form was successfully submitted!")
+      }
+
+    </script>
+  </body>
+</html>
